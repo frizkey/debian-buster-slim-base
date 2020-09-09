@@ -1,4 +1,4 @@
-FROM --platform=linux/arm/v7 debian:buster-slim
+FROM debian:buster-slim
 
 # Preps
 RUN apt-get -y update \
