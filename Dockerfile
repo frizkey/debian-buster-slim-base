@@ -12,4 +12,4 @@ RUN apt-get -y install nano sudo bash
 RUN apt-get -y autoremove \
     && apt-get -y auto-clean \
     && apt-get -y clean \
-    && rm -fr /tmp/* /var/tmp/*
+    && rm -fr /tmp/* /var/tmp/* /var/lib/apt/lists/*
