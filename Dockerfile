@@ -1,7 +1,5 @@
 FROM debian:buster-slim
 
-RUN echo "I'm building for $BUILDPLATFORM"
-
 # Preps
 RUN apt-get -y update \
     && apt-get -y upgrade \
