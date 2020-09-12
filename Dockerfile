@@ -1,5 +1,7 @@
 FROM debian:buster-slim
 
+RUN echo "$(date "+%d.%m.%Y %T")" >> /build_date.info
+
 # Preps
 RUN apt-get -y update \
     && apt-get -y dist-upgrade \
