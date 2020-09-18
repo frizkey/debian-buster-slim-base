@@ -8,7 +8,7 @@ ARG TAG
 # Install basic packages
 RUN apt-get -y update \
     && apt-get -y dist-upgrade \
-    && apt-get -y install sudo bash nano procps \
+    && apt-get -y install sudo bash nano procps screen \
     && apt-get -y autoremove \
     && apt-get -y autoclean \
     && apt-get -y clean \
